@@ -63,6 +63,11 @@ function Hero({ onRsvp }) {
         <h1>{event.title}</h1>
         <p className="subtitle">{event.subtitle}</p>
         <p className="tagline">{event.tagline}</p>
+        <ul className="promises">
+          {event.promises.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
         <div className="fact-row">
           <Fact label={event.when.label} headline={event.when.headline} detail={event.when.detail} />
           <Fact label={event.where.label} headline={event.where.headline} detail={event.where.detail} />
@@ -78,7 +83,11 @@ function Hero({ onRsvp }) {
         </div>
       </div>
       <aside className="mask-card">
-        <MaskFace />
+        <img
+          className="hall-photo"
+          src={`${import.meta.env.BASE_URL}uzgavenes-hall.jpg`}
+          alt="A parish hall table of pancakes, jam, and coffee, with handmade goat, witch, and devil masks."
+        />
         <p>{event.maskCaption}</p>
       </aside>
     </section>
@@ -333,31 +342,6 @@ function Flag() {
       <rect width="28" height="6.67" fill="#fdb913" />
       <rect y="6.67" width="28" height="6.66" fill="#006a44" />
       <rect y="13.33" width="28" height="6.67" fill="#c1272d" />
-    </svg>
-  );
-}
-
-function MaskFace() {
-  return (
-    <svg className="mask" viewBox="0 0 320 380" role="img" aria-label="A carved folk mask">
-      <rect width="320" height="380" fill="#1b3026" />
-      <rect x="22" y="22" width="276" height="336" fill="none" stroke="#c4a15a" strokeWidth="1" />
-      <path
-        d="M160 92c64 2 98 56 92 124-7 74-42 128-92 136-50-8-85-62-92-136-6-68 28-126 92-124z"
-        fill="#e4d2b0"
-      />
-      <path d="M114 118 L76 52 L108 86 Z" fill="#c4a15a" />
-      <path d="M206 118 L244 52 L212 86 Z" fill="#8c3a32" />
-      <path
-        d="M108 176c16-18 32-18 46-2M166 174c14-16 30-16 46 2"
-        fill="none"
-        stroke="#1b3026"
-        strokeWidth="5"
-      />
-      <path d="M114 190c12-12 26-8 34 4-12 8-24 8-34-4z" fill="#1b3026" />
-      <path d="M172 194c8-12 22-16 34-4-14 10-24 8-34 4z" fill="#1b3026" />
-      <path d="M160 204c10 16 10 34 0 50-12-8-18-24-16-36 2-8 10-12 16-14z" fill="#8c3a32" />
-      <ellipse cx="160" cy="292" rx="26" ry="9" fill="#1b3026" />
     </svg>
   );
 }

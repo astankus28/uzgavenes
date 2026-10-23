@@ -211,6 +211,21 @@ a {
   color: #2c2823;
 }
 
+.promises {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.7rem;
+  margin: 1.1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.promises li {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--green);
+}
+
 .fact-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -264,10 +279,16 @@ details {
   overflow: hidden;
 }
 
-.mask {
+.mask,
+.hall-photo {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.hall-photo {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
 .mask-card p {

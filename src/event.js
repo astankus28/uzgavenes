@@ -1,12 +1,14 @@
 export const event = {
-  brand: "Užgavėnės at St. Casimir",
+  brand: "Lithuanian Mardi Gras",
   parish: "St. Casimir Lithuanian Parish",
   organizers:
-    "Put on together by the Lithuanian school and the other community organizations at St. Casimir.",
-  title: "Užgavėnės",
-  subtitle: "Lithuanian Mardi Gras",
-  tagline: "The last feast before Lent. Masks, blynai, and the send-off of winter.",
-  eyebrow: "Sunday, February 7 · all ages welcome",
+    "Hosted at St. Casimir by the parish community, including the Lithuanian school.",
+  title: "Lithuanian Mardi Gras",
+  subtitle: "Užgavėnės",
+  tagline:
+    "The last feast before Lent. Pancakes, masks, and a short play where spring beats winter.",
+  eyebrow: "Sunday, February 7 · free to walk in",
+  promises: ["In English", "Free to come in", "Masks at the door"],
   when: {
     label: "When",
     headline: "Sunday, February 7",
@@ -15,7 +17,7 @@ export const event = {
   where: {
     label: "Where",
     headline: "St. Casimir Lithuanian Parish",
-    detail: "In the parish hall, its own community afternoon",
+    detail: "Parish hall at St. Casimir",
   },
   cost: {
     label: "Cost",
@@ -26,7 +28,7 @@ export const event = {
     email: "uzgavenes@[parish-domain-tba].org",
     phone: "[Parish office phone TBA]",
   },
-  maskCaption: "A mask is traditional. Come whether or not you have one.",
+  maskCaption: "A mask is part of the custom. Spare ones are at the door.",
   aboutTitle: "What is Užgavėnės?",
   about: [
     "Lithuania’s farewell to winter, held on the eve of Lent — kin to Mardi Gras and Shrove Tuesday. People wear masks, eat pancakes (blynai), and see winter out so spring can begin.",
@@ -82,7 +84,7 @@ export const event = {
     "Admission is free. The afternoon pays for itself at the table and the bar: pancakes and the rest of the food are for sale, and so are drinks, including alcohol.",
   food: [
     {
-      title: "Blynai",
+      title: "Pancakes (blynai)",
       detail: "The center of the meal. Stacks for the table, not a dessert course.",
     },
     {
