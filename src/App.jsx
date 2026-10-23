@@ -128,9 +128,10 @@ function About() {
 function Schedule() {
   return (
     <section className="band" id="schedule">
-      <div className="narrow">
-        <h2>{event.scheduleTitle}</h2>
-        <p className="lede">{event.scheduleNote}</p>
+      <div className="narrow schedule-layout">
+        <div>
+          <h2>{event.scheduleTitle}</h2>
+          <p className="lede">{event.scheduleNote}</p>
         <ol className="timeline">
           {event.schedule.map((item) => (
             <li key={item.title}>
@@ -142,6 +143,14 @@ function Schedule() {
             </li>
           ))}
         </ol>
+        </div>
+        <figure className="match-photo">
+          <img
+            src={`${import.meta.env.BASE_URL}lasininis-kanapinis.jpg`}
+            alt="Lašininis, padded and heavy, grappling with lean Kanapinis while families watch from pancake tables."
+          />
+          <figcaption>Lašininis, winter, meets Kanapinis, spring. Spring is supposed to win.</figcaption>
+        </figure>
       </div>
     </section>
   );
