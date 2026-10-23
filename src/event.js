@@ -10,7 +10,7 @@ export const event = {
   when: {
     label: "When",
     headline: "Sunday, February 7",
-    detail: "2027, after school, into the evening",
+    detail: "2027, after church, into the evening",
   },
   where: {
     label: "Where",
@@ -40,10 +40,10 @@ export const event = {
     "Parish families, neighbors, and first-time guests sit at the same tables.",
   ],
   scheduleTitle: "The afternoon",
-  scheduleNote: "Doors open after Sunday school. Later times are still being set.",
+  scheduleNote: "Doors open after church. Later times are still being set.",
   schedule: [
     {
-      time: "After school",
+      time: "After church",
       title: "Doors open",
       detail: "Name tags at the door. Spare masks if you did not bring one.",
     },
@@ -133,7 +133,7 @@ export const event = {
   ],
   visitTitle: "The hall",
   visitIntro:
-    "Sunday, February 7, in the parish hall after school. Address, parking, and phones are still being confirmed.",
+    "Sunday, February 7, in the parish hall after church. Address, parking, and phones are still being confirmed.",
   visit: [
     {
       title: "Address",
@@ -175,5 +175,5 @@ export const event = {
     },
   ],
   footerNote:
-    "Clock times past “after school,” the address, and phones are still placeholders — edit src/event.js when you know them. Tradition notes follow public descriptions of Užgavėnės (masks, Lašininis and Kanapinis, Morė, pancakes).",
+    "Clock times past “after church,” the address, and phones are still placeholders — edit src/event.js when you know them. Tradition notes follow public descriptions of Užgavėnės (masks, Lašininis and Kanapinis, Morė, pancakes).",
 };

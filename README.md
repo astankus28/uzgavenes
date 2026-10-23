@@ -1,6 +1,6 @@
 # Užgavėnės
 
-A one-page site for Užgavėnės at St. Casimir: Sunday, February 7, 2027, after school. Admission is free. Details that are still open live in `src/event.js`.
+A one-page site for Užgavėnės at St. Casimir: Sunday, February 7, 2027, after church. Admission is free. Details that are still open live in `src/event.js`.
 
 ```bash
 npm install
