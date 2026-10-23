@@ -86,7 +86,7 @@ function Hero({ onRsvp }) {
         <img
           className="hall-photo"
           src={`${import.meta.env.BASE_URL}uzgavenes-hall.jpg`}
-          alt="A parish hall table of pancakes, jam, and coffee, with handmade goat, witch, and devil masks."
+          alt="Two people in carved wooden goat and witch masks, with a pancake supper behind them."
         />
         <p>{event.maskCaption}</p>
       </aside>
